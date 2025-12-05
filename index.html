@@ -1,1 +1,270 @@
-hello world!
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Specmentis | Technical Consulting for Startups</title>
+    <meta name="description" content="Technical consulting for startups. Full-stack development, AI integration, and system architecture.">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --ink: #1a1a1a;
+            --paper: #fafafa;
+            --accent: #c1440e;
+            --muted: #6a6a6a;
+            --border: #d4d4d4;
+        }
+
+        body {
+            font-family: "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, serif;
+            background: var(--paper);
+            color: var(--ink);
+            line-height: 1.6;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+
+        .container {
+            max-width: 720px;
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+
+        header {
+            padding: 80px 0 120px;
+            border-bottom: 1px solid var(--border);
+        }
+
+        .logotype {
+            font-size: 48px;
+            font-weight: 400;
+            letter-spacing: -0.02em;
+            margin-bottom: 16px;
+            font-style: italic;
+        }
+
+        .tagline {
+            font-size: 18px;
+            color: var(--muted);
+            font-weight: 400;
+            letter-spacing: 0.01em;
+        }
+
+        main {
+            padding: 80px 0;
+        }
+
+        section {
+            margin-bottom: 80px;
+        }
+
+        section:last-of-type {
+            margin-bottom: 0;
+        }
+
+        h2 {
+            font-size: 14px;
+            text-transform: uppercase;
+            letter-spacing: 0.12em;
+            font-weight: 600;
+            margin-bottom: 32px;
+            color: var(--accent);
+        }
+
+        .services-grid {
+            display: grid;
+            gap: 40px;
+        }
+
+        .service {
+            border-left: 3px solid var(--ink);
+            padding-left: 24px;
+        }
+
+        .service-title {
+            font-size: 22px;
+            font-weight: 600;
+            margin-bottom: 8px;
+            letter-spacing: -0.01em;
+        }
+
+        .service-description {
+            color: var(--muted);
+            font-size: 16px;
+        }
+
+        .availability {
+            background: var(--ink);
+            color: var(--paper);
+            padding: 32px;
+            border-radius: 2px;
+            font-size: 18px;
+            text-align: center;
+            letter-spacing: 0.01em;
+        }
+
+        .contact {
+            text-align: center;
+        }
+
+        .contact-link {
+            display: inline-block;
+            font-size: 20px;
+            color: var(--accent);
+            text-decoration: none;
+            border-bottom: 2px solid var(--accent);
+            padding-bottom: 4px;
+            transition: opacity 0.2s ease;
+        }
+
+        .contact-link:hover {
+            opacity: 0.7;
+        }
+
+        footer {
+            padding: 60px 0 40px;
+            border-top: 1px solid var(--border);
+            text-align: center;
+            color: var(--muted);
+            font-size: 14px;
+        }
+
+        .philosophy {
+            font-size: 18px;
+            line-height: 1.8;
+            color: var(--ink);
+            font-style: italic;
+            padding: 32px 0;
+            border-top: 1px solid var(--border);
+            border-bottom: 1px solid var(--border);
+        }
+
+        @media (max-width: 640px) {
+            .logotype {
+                font-size: 36px;
+            }
+
+            .tagline {
+                font-size: 16px;
+            }
+
+            header {
+                padding: 60px 0 80px;
+            }
+
+            main {
+                padding: 60px 0;
+            }
+
+            section {
+                margin-bottom: 60px;
+            }
+
+            .service-title {
+                font-size: 20px;
+            }
+
+            .service-description {
+                font-size: 15px;
+            }
+
+            .availability {
+                font-size: 16px;
+                padding: 24px;
+            }
+
+            .contact-link {
+                font-size: 18px;
+            }
+
+            .philosophy {
+                font-size: 16px;
+            }
+        }
+
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --ink: #fafafa;
+                --paper: #1a1a1a;
+                --accent: #ff6b35;
+                --muted: #a0a0a0;
+                --border: #3a3a3a;
+            }
+
+            .availability {
+                background: var(--paper);
+                color: var(--ink);
+                border: 2px solid var(--border);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1 class="logotype">Specmentis</h1>
+            <p class="tagline">Technical Consulting for Startups</p>
+        </header>
+
+        <main>
+            <section class="intro">
+                <div class="philosophy">
+                    Every system contains within it the seeds of its own complexity.
+                    I help founders navigate that complexity with precision, turning technical
+                    chaos into coherent architecture.
+                </div>
+            </section>
+
+            <section class="services">
+                <h2>Services</h2>
+                <div class="services-grid">
+                    <div class="service">
+                        <h3 class="service-title">Full-Stack Development</h3>
+                        <p class="service-description">
+                            End-to-end implementation of production systems. From database schema
+                            to API design to interface layer, built with attention to long-term
+                            maintainability.
+                        </p>
+                    </div>
+                    <div class="service">
+                        <h3 class="service-title">AI Integration & Architecture</h3>
+                        <p class="service-description">
+                            Strategic integration of AI capabilities into existing systems.
+                            Not just API calls—thoughtful architecture that aligns AI capabilities
+                            with business objectives.
+                        </p>
+                    </div>
+                    <div class="service">
+                        <h3 class="service-title">System Stabilization & Technical Debt</h3>
+                        <p class="service-description">
+                            Inherited a fragile codebase? I diagnose systemic issues, prioritize
+                            interventions, and execute surgical refactoring that preserves
+                            functionality while improving structure.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="status">
+                <div class="availability">
+                    Available for immediate engagement
+                </div>
+            </section>
+
+            <section class="contact">
+                <h2>Contact</h2>
+                <a href="mailto:marc@specmentis.com" class="contact-link">marc@specmentis.com</a>
+            </section>
+        </main>
+
+        <footer>
+            <p>&copy; 2025 Specmentis. All rights reserved.</p>
+        </footer>
+    </div>
+</body>
+</html>
